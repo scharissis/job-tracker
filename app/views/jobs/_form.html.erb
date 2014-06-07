@@ -1,0 +1,19 @@
+<%= form_for @job, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :job_id, 'Job ID', :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :job_id, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :end_date, 'End Date', :class => 'control-label' %>
+    <div class="controls">
+      <%= f.date_select :end_date, :class => 'date_select' %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to 'Cancel', jobs_path, :class => 'btn' %>
+  </div>
+<% end %>
