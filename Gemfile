@@ -11,6 +11,7 @@ gem "therubyracer"
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
+gem 'less-rails'
 #gem 'bootstrap-sass'
 
 # Use Uglifier as compressor for JavaScript assets
