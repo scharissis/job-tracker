@@ -4,7 +4,7 @@ class JobsController < ApplicationController
   # GET /jobs
   # GET /jobs.json
   def index
-    @jobs = Job.where(:end_date => Date.today..Date.today+7).order(:end_date)
+    @jobs = Job.where(:end_date => Date.today-7..Date.today+7).order(:end_date)
   end
 
   # GET /jobs/1

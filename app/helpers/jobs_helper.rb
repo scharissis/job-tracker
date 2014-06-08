@@ -5,7 +5,7 @@ module JobsHelper
     #return "danger"
 
     if days_remaining == 0
-      return "error"
+      return "danger"
     end
 
     if days_remaining < 3
