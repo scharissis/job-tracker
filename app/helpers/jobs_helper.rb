@@ -4,7 +4,7 @@ module JobsHelper
     days_remaining = job.end_date - Date.today
     #return "danger"
 
-    if days_remaining == 0
+    if days_remaining <= 0
       return "danger"
     end
 
